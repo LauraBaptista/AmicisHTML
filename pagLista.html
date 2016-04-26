@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+    <title>AMICIS</title>
+    <link rel="shortcut icon" href="imgs/favicon.png" />
+    <link rel="stylesheet" href="Css/estilo.css" type="text/css">
+    <script language="JavaScript" src="JavaScript/Funcoes.js"></script>    
+</head>
+<body>
+<center> 
+    <font face=arial size=5 color=white>
+        <center>
+            <div class="topo">
+                <center>
+                    <img src="Imagens/banner.png">
+                    <img src="Imagens/logoFita.png" class="fita">
+                </center>
+            </div>
+        </center>
+        <div class="barra"> </div>
+        <div class="inicio"> <a href="Pricipal.html"> Início </a> </div>
+        <div class="cadastroC"> <a href="CadastroC.html"> Cadastro Clientes </a> </div>
+        <div class="cadastroF"> <a href="CadastroF.html"> Cadastro Filmes </a> </div>
+        <center>
+            <div class="meio"></div>
+            <nav>
+            <div class="Log1">
+                <center>
+                <form action="CadastroC">
+                    <table cellspacing="13">
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><b>Nome: </b></td> 
+                            <td><input type="text" name="nome" id="nome" maxlength="50" required></td>
+                        </tr>   
+
+                        <tr>
+                            <td align="left"><b>CPF: </b></td> 
+                            <td><input type="text" name="cpf" id="cpf" required maxlength="14" placeholder="Ex.: xxx.xxx.xxx-xx" onkeypress="mascara(this, '###.###.###-##')"></td>
+                        </tr>
+
+                        <tr>
+                            <td align="left"><b>RG: </b></td> 
+                            <td><input type="text" name="rg" id="rg" required maxlength="12" placeholder="Ex.: xx.xxx.xxx-x" onkeypress="mascara(this, '##.###.###-#')"></td>
+                        </tr>
+
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td align="left"><center><button type="submit"><b>Cadastrar</b></button></center></td>
+
+                            <td align="left"><center><button type="submit" onclick="document.forms[0].action = 'ExclusaoC'; return true;"><b>Excluir</b></button></center></td>
+                        </tr> 
+                        <tr>
+                            <td align="left"><center><button type="submit" onclick="document.forms[0].action = 'AlteracaoC'; return true;"><b>Alterar</b></button></center></td>
+
+                            <td align="left"><center><button type="submit" onclick="document.forms[0].action = 'PesquisarC'; return true;"><b>Pesquisar</b></button></center></td>
+                        </tr> 
+                        <tr align="left"><center><button type="reset"><b>Limpar</b></button></center>                    
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                </table>
+            </form> 
+            </center>
+        </div>
+    </nav>
+    </center>
+    </font>
+</center>
+    <center>
+    <footer>
+        <center>
+            <nav class="nav1">
+                Todos os direitos reservados à Video Locadora Muvuca.<br>
+                Rua Santa Cruz, 17, Nova Paulínia, Paulínia - SP
+            </nav>
+        </center>
+    </footer>
+    </center>
+
+</body>
+</html>
